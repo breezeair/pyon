@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LatticePoint</class>
+ <widget class="QWidget" name="LatticePoint">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>640</width>
+    <height>480</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>30</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>玄武</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>鼓楼</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>秦淮</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>建邺</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>雨花台</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>栖霞</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>浦口</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>六合</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>江宁</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>溧水</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>高淳</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QListView" name="listView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>80</y>
+     <width>131</width>
+     <height>341</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>90</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>专管员：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>130</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>个人手机：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>220</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>咨询内容：</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_2">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>210</y>
+     <width>80</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>申办流程</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>申办渠道</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>申办条件</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>其他</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>90</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_5">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>130</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="textEdit">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>250</y>
+     <width>401</width>
+     <height>171</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>提交</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>440</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>取消</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>170</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>工作手机：</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_7">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>170</y>
+     <width>54</width>
+     <height>12</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>0</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="comboBox_3">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>30</y>
+     <width>69</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <item>
+    <property name="text">
+     <string>玄武区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>鼓楼区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>秦淮区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>建邺区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>雨花台区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>栖霞区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>浦口区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>六合区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>江宁区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>溧水区</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string>高淳区</string>
+    </property>
+   </item>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
