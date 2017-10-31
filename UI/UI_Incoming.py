@@ -13,6 +13,8 @@ from UI.UI_LatticePoint import *
 from UI.UI_Maintenance import *
 from UI.UI_Feedback import *
 from UI.UI_Other import *
+import json
+import datetime
 
 class Ui_IncomingInfo(object):
     def setupUi(self, IncomingInfo):
@@ -137,11 +139,30 @@ class Ui_IncomingInfo(object):
 
     def btnPlace(self):
         content = self.comboBox.currentText()
-        number = self.lineEdit.text()
+        tel = self.lineEdit.text()
         now = datetime.datetime.now()
         dateNow = now.strftime('%Y-%m-%d')
         timeNow = now.strftime('%H:%M:%S')
         worker = self.lineEdit_4.text()
+        info = {"咨询内容":content, "来电号码":tel, "日期":dateNow, "时间":timeNow, "登记员":worker}
+        with open("database\incominginfo.json", "a") as f:
+            json.dump(info, f, indent=4, separators=(',',':'), ensure_ascii=False)
+        print("guidang")
+        self.getIncomingNo()
+
+    def getIncomingNo(self):
+        now = datetime.datetime.now()
+        dateNow = now.strftime('%Y-%m-%d')
+        cou = 1
+        with open("./database/incominginfo.json", 'r') as json_file:
+            data = json.loads(json_file)
+            print(data)
+            # for item in data:
+            #     if(item['日期'] == dateNow):
+            #         cou +=1
+            # return cou
+
+
 
         
 
